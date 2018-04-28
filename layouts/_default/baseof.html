@@ -43,11 +43,20 @@
 
     <header class="l-header">
       <div class="l-container">
-        <div class="h-logo p-logo">
-          <a href="{{ .Site.BaseURL }}" class="h-logo">{{ .Site.Title }}</a>
+        <div class="h-logo ">
+          <a href="{{ .Site.BaseURL }}">
+            <amp-img alt="A view of the sea"
+                src="/logo.png"
+                width="936"
+                height="120"
+                layout="responsive">
+            </amp-img>
+        </a>
         </div>
       </div>
     </header>
+
+
 
     <main>
       {{ block "main" . }}{{ end }}
@@ -57,15 +66,16 @@
 
     <footer class="l-footer">
       <div class="l-container">
-        <p>{{ with .Site.Copyright }}{{ . | safeHTML }}{{ else }}<span class="h-logo">&copy; {{ .Site.Title }}</span>{{ end }}</p>
-        <aside>
-          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
-          <p><a href="https://github.com/dim0627/hugo_theme_aglaus" class="h-logo">Aglaus</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
-        </aside>
+        <p>
+          <a href="http://blog.explainingcryptocurrency.net/about">About</a> |
+          <a href="http://blog.explainingcryptocurrency.net/lists">Lists</a> |
+          <a href="http://explainingcryptocurrency.net/">Podcast</a> |
+          <a href="https://twitter.com/mr_rigden">Twitter</a> |
+          <a href="https://www.youtube.com/c/MrRigdensChannel">Youtube</a>
+          
+        </p>
       </div>
     </footer>
-
-    <a href="#" class="p-movetop" title="ページ上部へ戻る" rel="nofollow"></a>
   </body>
 </html>
 

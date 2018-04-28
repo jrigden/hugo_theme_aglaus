@@ -9,15 +9,30 @@
 <div class="l-container">
   {{ .Render "summary" }}
 
-  {{ $recent_articles := (where (where .Site.Pages ".Source.Path" "!=" .Source.Path) "IsPage" true) }}
-  {{ if ne 0 (len $recent_articles) }}
-  <section>
-    <header><span>Latests</span></header>
-    <ul class="p-articles thin">
-      {{ range first ($.Site.Params.latestSize | default 3) $recent_articles }}<li>{{ .Render "li_sm" }}</li>{{ end }}
-    </ul>
-  </section>
-  {{ end }}
+  
 </div>
+<div class="subscribe">
+    <h3>
+        <a href="http://explainingcryptocurrency.net/">
+          Subscribe to the Podcast
+        </a>
+    </h3>
+    <p>Want to know more about cryptocurrency?
+      <br>
+      If you liked this post, you'll love the podcast.
+      <br>
+      Please check it out!
+    </p>
+    <a href="http://explainingcryptocurrency.net/">
+      <amp-img class="amp-close-image"
+      src="/cover.jpg"
+      width="250"
+      height="250"
+      alt="close sidebar"
+      on="tap:sidebar.close"
+      role="button"
+      tabindex="0"></amp-img>
+    </a>
+  </div>
 
 {{ end }}
