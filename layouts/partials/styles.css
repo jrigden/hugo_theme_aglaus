@@ -408,3 +408,7 @@ article.li.sm .header-wrapper {
   padding-bottom: .5rem;
 }
 
+.corrections {
+  font-size: 75%;
+  text-align: right;
+}
