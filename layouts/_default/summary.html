@@ -35,7 +35,12 @@
     </header>
   </div>
 
-  <div class="article-body">{{ .Content }}</div>
+  <div class="article-body">
+    <p>
+        {{ .Description }}
+    </p>
+    {{ .Content }}
+  </div>
   <p class="corrections">
     <a href="https://github.com/jrigden/ExplainingCryptocurrencyPosts/edit/master/{{ .File.Path }}">
       Corrections and suggestions <br> for this page can be made on Github.
