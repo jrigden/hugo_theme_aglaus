@@ -399,12 +399,13 @@ article.li.sm .header-wrapper {
 .subscribe p {
   font-size: 1.25em;
   padding-bottom: 1rem;
+
 }
 
 .article-body p {
   font-size: 14pt;
   text-align: justify;
-  padding-bottom: .5rem;
+  padding-bottom: 1rem;
 }
 
 .corrections {
