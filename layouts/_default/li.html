@@ -9,5 +9,13 @@
 
     </header>
   </div>
-  <div class="article-body summary">{{ .Description | default .Summary }}</div>
+  <div class="article-body summary">
+    <p>
+      {{ .Description }}
+  </p>
+  <p>
+      {{ .Summary }}
+  </p>
+    
+  </div>
 </article>
